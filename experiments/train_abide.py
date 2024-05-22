@@ -11,15 +11,12 @@ from numpy import product
 from torch import nn, optim
 import torch.nn.functional as F
 import torch_geometric.utils as utils
-from sat.models import GraphTransformer
-from sat.data import GraphDataset
-from sat.utils import count_parameters
-from sat.position_encoding import POSENCODINGS
-from sat.gnn_layers import GNN_TYPES
-from sat.utils import add_zeros, extract_node_feature
+from module.models import GraphTransformer
+from module.utils import count_parameters
+from module.position_encoding import POSENCODINGS
+from module.utils import add_zeros, extract_node_feature
 from timeit import default_timer as timer
 
-from ogb.graphproppred import PygGraphPropPredDataset
 from ogb.graphproppred import Evaluator
 from dataloader import init_stratified_dataloader
 from sklearn.metrics import roc_auc_score, confusion_matrix
