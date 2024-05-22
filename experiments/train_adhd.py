@@ -32,7 +32,7 @@ def load_args():
     parser.add_argument('--num-heads', type=int, default=8, help="number of heads")
     parser.add_argument('--num-layers', type=int, default=3, help="number of layers")
     parser.add_argument('--dim-hidden', type=int, default=128, help="hidden dimension of Transformer")
-    parser.add_argument('--dropout', type=float, default=0.5, help="dropout")
+    parser.add_argument('--dropout', type=float, default=0.1, help="dropout")
     parser.add_argument('--epochs', type=int, default=200,
                         help='number of epochs')
     parser.add_argument('--lr', type=float, default=0.0003,
