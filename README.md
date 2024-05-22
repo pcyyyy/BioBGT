@@ -4,11 +4,11 @@ This is a code source for "Biologically Plausible Brain Graph Transformer". We h
 
 1. Implementation Requirements:
 
-  PyTorch Geometric v2.0.4
+    PyTorch Geometric v2.0.4
   
-  PyTorch v1.9.1. 
+    PyTorch v1.9.1. 
   
-  NVIDIA A6000 GPU with 48GB of memory
+    NVIDIA A6000 GPU with 48GB of memory
 
 2. Dataset: ADHD-200
    
