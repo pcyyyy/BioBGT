@@ -10,8 +10,22 @@ This is a code source for "Biologically Plausible Brain Graph Transformer". We h
   
     NVIDIA A6000 GPU with 48GB of memory
 
-2. Dataset: ADHD-200
+2. Dataset:
+
+   ADHD-200 dataset is provided (xx).
    
-3. Hyperparameter settings:
+   ABIDE can be downloaded from: https://fcon_1000.projects.nitrc.org/indi/abide/ 
+
+   ADNI can be downloaded from: https://adni.loni.usc.edu/
+   
+4. Hyperparameter settings:
 
 <img width="449" alt="image" src="https://github.com/pcyyyy/Biologically-Plausible-Brain-Graph-Transformer/assets/43360332/60be0b76-df8d-440e-8bba-d933d9fc641d">
+
+4. Step
+    a. Data processing: xx
+    b. Main code for Model: xx
+    c. Training: xx 
+   
+
+   
