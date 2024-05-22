@@ -24,7 +24,9 @@ This is a code source for "Biologically Plausible Brain Graph Transformer". We h
 
 4. Step
     a. Data processing: xx
+   
     b. Main code for Model: xx
+   
     c. Training: xx 
    
 
