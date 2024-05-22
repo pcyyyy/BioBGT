@@ -28,7 +28,7 @@ This is a code source for "Biologically Plausible Brain Graph Transformer". We h
    
     a. Data processing: Preprocess.py
    
-    b. Main code for Model: layers.py
+    b. Main code for Model: layers.py in "module" file (All code will be released after acceptance.)
    
     c. Training: train_adhd.py 
    
