@@ -12,7 +12,7 @@ This is a code source for "Biologically Plausible Brain Graph Transformer". We h
 
 2. Dataset:
 
-   ADHD-200 dataset is provided (xx).
+   ADHD-200 dataset is provided in folder 'dataset'.
    
    ABIDE can be downloaded from: https://fcon_1000.projects.nitrc.org/indi/abide/ 
 
@@ -28,9 +28,9 @@ This is a code source for "Biologically Plausible Brain Graph Transformer". We h
    
     a. Data processing: xx
    
-    b. Main code for Model: xx (All code will be released after acceptance.)
+    b. Main code for Model: layers.py
    
-    c. Training: xx 
+    c. Training: train_adhd.py 
    
 
    
