@@ -159,7 +159,7 @@ class Attention(gnn.MessagePassing):
         return out, None
 
 class TransformerEncoderLayer(nn.TransformerEncoderLayer):
-    r"""Structure-Aware Transformer layer, made up of structure-aware self-attention and feed-forward network.
+    r"""Transformer layer, made up of Functional Module-Aware self-attention and feed-forward network.
 
     Args:
     ----------
