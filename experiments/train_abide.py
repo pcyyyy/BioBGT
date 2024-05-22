@@ -254,12 +254,8 @@ def main():
     else:
         input_size = num_edge_features
 
-    data_path = './abide.npy'
+    data_path = './adhd.npy'
     data = np.load(data_path, allow_pickle=True).item()
-    final_timeseires = data["timeseires"]
-    final_pearson = data["corr"]
-    labels = data["label"]
-    site = data['site']
 
     try_dataloader = init_stratified_dataloader(torch.tensor(final_timeseires, dtype=torch.float),
                                                 torch.tensor(final_pearson, dtype=torch.float),
@@ -302,15 +298,6 @@ def main():
     def warmup_lr_scheduler(s):
         lr = s * lr_steps
         return lr
-
-    '''
-    test_dset = GraphDataset(dataset[split_idx['test']], degree=True,
-        k_hop=args.k_hop, se=args.se, use_subgraph_edge_attr=args.use_edge_attr,
-        return_complete_index=False)
-    test_loader = DataLoader(test_dset, batch_size=args.batch_size, shuffle=False)
-    '''
-    # if abs_pe_encoder is not None:
-    #     abs_pe_encoder.apply_to(test_dset)
 
     print("Training...")
     best_val_loss = float('inf')
