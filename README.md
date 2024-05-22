@@ -18,9 +18,11 @@ This is a code source for "Biologically Plausible Brain Graph Transformer". We h
 
    ADNI can be downloaded from: https://adni.loni.usc.edu/
    
-4. Hyperparameter settings:
+4. Hyperparameter settings: see Table 4 in the paper
 
-<img width="449" alt="image" src="https://github.com/pcyyyy/Biologically-Plausible-Brain-Graph-Transformer/assets/43360332/60be0b76-df8d-440e-8bba-d933d9fc641d">
+    <img width="567" alt="image" src="https://github.com/pcyyyy/Biologically-Plausible-Brain-Graph-Transformer/assets/43360332/9766bbe0-356c-47b0-94e2-f0d22c630cff">
+
+ 
 
 4. Step
    
