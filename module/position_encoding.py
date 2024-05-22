@@ -27,9 +27,6 @@ class LapEncoding(PositionEncoding):
 
     def compute_pe(self, graph):
         edge_attr = graph.edge_attr if self.use_edge_attr else None
-        # edge_index, edge_attr = utils.get_laplacian(
-        #     graph.edge_index, edge_attr, normalization=self.normalization,
-        #     num_nodes=graph.num_nodes)
         edge_index, edge_attr = utils.get_laplacian(
             graph.edge_index, edge_attr, normalization=self.normalization,
             num_nodes=graph.x.shape[0])
