@@ -23,6 +23,7 @@ This is a code source for "Biologically Plausible Brain Graph Transformer". We h
 <img width="449" alt="image" src="https://github.com/pcyyyy/Biologically-Plausible-Brain-Graph-Transformer/assets/43360332/60be0b76-df8d-440e-8bba-d933d9fc641d">
 
 4. Step
+   
     a. Data processing: xx
    
     b. Main code for Model: xx
