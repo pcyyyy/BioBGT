@@ -1,5 +1,5 @@
 
-This is a code source for "Biologically Plausible Brain Graph Transformer". We have uploaded a portion of our code and will release the entire codebase upon acceptance.
+This is a code source for paper "Biologically Plausible Brain Graph Transformer" (ICLR 2025).
 
 
 1. Implementation Requirements:
@@ -12,25 +12,26 @@ This is a code source for "Biologically Plausible Brain Graph Transformer". We h
 
 2. Dataset:
 
-   ADHD-200 dataset is provided in folder 'dataset'.
+   ADHD-200 dataset can be downloaded from: https://fcon_1000.projects.nitrc.org/indi/adhd200/
    
-   ABIDE can be downloaded from: https://fcon_1000.projects.nitrc.org/indi/abide/ 
-
+   ABIDE can be downloaded from: https://fcon_1000.projects.nitrc.org/indi/abide/
+   
    ADNI can be downloaded from: https://adni.loni.usc.edu/
+
+   Since the dataset files are too large to upload here, if you need the preprocessed data please contact: ciyuan.p@outlook.com
    
 4. Hyperparameter settings: see Table 4 in the paper
 
     <img width="567" alt="image" src="https://github.com/pcyyyy/Biologically-Plausible-Brain-Graph-Transformer/assets/43360332/9766bbe0-356c-47b0-94e2-f0d22c630cff">
 
- 
 
-4. Step
+5. Running
    
-    a. Data processing: Preprocess.py
+    a. Node importance encoding: node_perturbation.py
    
-    b. Main code for Model: layers.py in folder 'module' (All code will be released after acceptance.)
+    b. Functional module extractor: FunctionalModuleExtractor.py
    
-    c. Training: train_adhd.py 
+    c. Training: train_adhd.py (for ADHD-200 dataset)
    
 
    
