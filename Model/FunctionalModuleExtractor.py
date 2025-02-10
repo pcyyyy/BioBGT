@@ -136,7 +136,7 @@ def community_InfoNCE(x, adj):
     edge_weight = get_edge_weight(edge_index, com, com_cs)
     edge_index_1 = ced(edge_index, edge_weight, p=0.1, threshold=1.0)
 
-    # 参考CSGCL，两层GCN
+    # two-layer GCN
     encoder1 = Encoder(x.shape[1], 128,
                           torch.nn.PReLU(),
                           base_model=gnn.GCNConv,
@@ -147,7 +147,7 @@ def community_InfoNCE(x, adj):
     optimizer = optim.Adam(encoder1.parameters(), lr=0.001)
     criterion = InfoNCE()
 
-    # 训练模型
+    # training (contrastive learning)
     for epoch in range(100):
         total_community_loss = 0.0
         #total_community_loss = torch.tensor(total_community_loss, requires_grad=True)
@@ -156,7 +156,7 @@ def community_InfoNCE(x, adj):
         for i in range(len(classified_dict)):
             query = []
             positive = []
-            # 生成query、Positive和Negative用于InfoNCE loss
+            # Genrate query、Positive, and Negative for InfoNCE loss
             for j in classified_dict[i]:
                 query.append(torch.tensor(update_x[j], dtype=torch.float))
                 positive.append(torch.tensor(augment_x[j], dtype=torch.float))
@@ -165,7 +165,6 @@ def community_InfoNCE(x, adj):
             positive = torch.stack(positive)
             positive.requires_grad = True
 
-            # 正样本以外的所有节点，都是负样本
             negative = []
             for k in range(200): # node num
                 if k not in classified_dict[i]:
@@ -173,7 +172,7 @@ def community_InfoNCE(x, adj):
             negative = torch.stack(negative)
             negative.requires_grad = True
 
-            # InfoNCE loss, n个社区的loss相加
+            # InfoNCE loss
             loss = criterion(query, positive, negative)
             total_community_loss += loss
 
