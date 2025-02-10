@@ -20,7 +20,7 @@ This is a code source for paper "Biologically Plausible Brain Graph Transformer"
 
    Since the dataset files are too large to upload here, if you need the preprocessed data please contact: ciyuan.p@outlook.com
    
-4. Hyperparameter settings: see Table 4 in the paper
+4. Hyperparameter settings
 
     <img width="567" alt="image" src="https://github.com/pcyyyy/Biologically-Plausible-Brain-Graph-Transformer/assets/43360332/9766bbe0-356c-47b0-94e2-f0d22c630cff">
 
