@@ -17,21 +17,19 @@ def VertexEnt(G, belta=None, perturb_strategy='default', printLog=False):
     :param G:
     :return:
     """
-    # 邻接矩阵
     # nodelist: list, optional:
     # The rows and columns are ordered according to the nodes in nodelist.
     # If nodelist is None, then the ordering is produced by G.nodes().
     A = nx.adjacency_matrix(G, nodelist=sorted(G.nodes())).todense()
     assert 0 in G, "Node 0 should be in the input graph!"
     assert np.allclose(A, A.T), "adjacency matrix should be symmetric"
-    # 拉普拉斯矩阵
     L = np.diag(np.array(sum(A)).flatten()) - A
     N = G.number_of_nodes()
 
     eigValue,eigVector = np.linalg.eigh(L)
     print("Finish calucating eigen values!")
     eigValue = eigValue.real
-    eigVector = eigVector.real#每个特征向量一列
+    eigVector = eigVector.real
 
     # sort_idx = np.argsort(eigValue)
     # eigValue=eigValue[sort_idx]
