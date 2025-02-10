@@ -13,7 +13,6 @@ def new_generate_beta(lambda2):
 
 def VertexEnt(G, belta=None, perturb_strategy='default', printLog=False):
     """
-    近似计算的方法计算节点纠缠度
     :param G:
     :return:
     """
