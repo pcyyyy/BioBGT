@@ -9,9 +9,9 @@ import torch
 from torch import nn, optim
 import torch.nn.functional as F
 import torch_geometric.utils as utils
-from bgt.models import GraphTransformer
-from bgt.utils import count_parameters
-from bgt.utils import add_zeros, extract_node_feature
+from Model.models import GraphTransformer
+from Model.utils import count_parameters
+from Model.utils import add_zeros, extract_node_feature
 from timeit import default_timer as timer
 from dataloader import init_stratified_dataloader
 from sklearn.metrics import roc_auc_score, confusion_matrix
