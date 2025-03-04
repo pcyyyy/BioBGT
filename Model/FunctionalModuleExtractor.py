@@ -2,7 +2,7 @@ import torch
 import community
 from torch import nn, optim
 from cdlib.utils import convert_graph_formats
-from bgt.InfoNCE import InfoNCE
+from InfoNCE import InfoNCE
 import networkx as nx
 import numpy as np
 import torch_geometric.nn as gnn
