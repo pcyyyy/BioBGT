@@ -17,8 +17,6 @@ This is a code source for paper "Biologically Plausible Brain Graph Transformer"
    ABIDE can be downloaded from: https://fcon_1000.projects.nitrc.org/indi/abide/
    
    ADNI can be downloaded from: https://adni.loni.usc.edu/
-
-   Since the dataset files are too large to upload here, if you need the preprocessed data please contact: ciyuan.p@outlook.com
    
 4. Hyperparameter settings
 
